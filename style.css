@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Mono:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+.title{
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+    margin: 1rem;
+}
+.flex, .flexNew{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column{
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    display: grid;
+    grid-column-gap: 12px;
+    text-align: left;
+}
+.container{
+    max-width: 500px;
+    margin: auto;
+
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.inputControls input, .inputControls button{
+    width: 116.25px;
+    margin: 5px 12px 5px 0;
+    height: 35px;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.inputControls input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.inputControls input:first-child{
+    width: 100%;
+}
+.inputControls button{
+    width: 500px;
+    background-color: red;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.inputControls button:last-child{
+    margin-right: 0;
+    background-color: green;
+}
+.item-container{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 2rem;
+
+}
+.item-title{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    padding-left: 1rem;
+}
+.item-title h3{
+    font-weight: 500;
+    margin-left: -.5rem;
+}
+.item-title h3:first-child{
+    margin-left: .5rem;
+}
+
+.item-list{
+    color: aquamarine;
+    color: white;
+    padding: 1rem ;
+}
+.item-list li{
+    background-color: rgb(27, 25, 23);
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    user-select: none;
+}
+.item-list li p:nth-child(3){
+    margin-left: 1.2rem;
+    
+}
+.item-list li p:nth-child(4){
+    margin-left: .9rem;
+}
+.item-list li p:nth-child(2){
+    margin-left: -.7rem;
+}
+.item-list li p:first-child{
+    margin-left: .5rem;
+}
+
+#clearAll{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: yellow;
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+    margin-left: -1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+.item-list li button{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.markDoneBtn{
+    background-color: yellow;
+}
+.item-list li button:last-child{
+    background-color: red;
+}
+#units{
+    text-transform: uppercase;
+}
+#units::placeholder{
+    text-transform: capitalize;
+}
+
+.gridTable{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-column-gap: 15px;
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+}
+.headRow{
+    padding: 8px;
+    background-color: rgb(0, 0, 0);
+    color: yellow;
+}
+.headRow h3{
+    font-weight: 400;
+}
+.gridTable p{
+    margin: auto 0;
+    text-align: left;
+    text-transform: none;
+}
+.btn{
+    border-radius: 2.5px;
+    color: white;
+    border: none;
+    outline: none;
+    height: 28px;
+    width: 75px;
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.clear{
+    background-color: yellow;
+    font-weight: 700;
+}
+
+.colorGrey{
+    color: rgb(39, 39, 39);
+}
+.deleteBtn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: auto;
+    background-color: red;
+    cursor: pointer;
+}
+.toggleBtn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: auto;
+    cursor: pointer;
+}
+.markDone p{
+    text-decoration: line-through red;
+    color: yellow;
+}
+.unDoneBtn{
+    background-color: green;
+}
+details{
+    margin: 1rem auto;
+    max-width: 500px;
+}
+details summary{
+    font-size: 1.15rem;
+    text-transform: none;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+footer{
+    padding: .7rem;
+    margin-top: 2rem;
+    background-color: rgb(27, 25, 23);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+footer a{
+    text-transform: none;
+    color: yellow;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media (max-width: 501px) {
+    .container{
+        max-width: 95vw;
+    }
+    .inputControls input{
+        width: 100px;
+        margin: 5px 10px 5px 0;
+    }
+    .inputControls button{
+        width: 200px;
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    .item-title h3:last-child{
+        margin-left: -.7rem;
+    }
+    #clearAll{
+        margin-right: 1rem;
+    }
+    .item-list li button{
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+    }
+    .item-list li button:last-child{
+        margin-right: -8px;
+    }
+    footer{
+        letter-spacing: 0;
+    }
+
+}

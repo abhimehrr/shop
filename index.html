@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Buds | imbot.</title>
+</head>
+<body>
+    <h1 class="title">{ shopping buds }</h1>
+    <div class="container">
+        <div class="inputControls">
+                <input type="text" placeholder="items name" id="inputText" autofocus>
+            <div class="space-between">
+                <input type="number" placeholder="qty." id="qantity">
+                <input type="text" placeholder="units" id="units">
+                <button id="reset">reset</button>
+                <button id="addBtn">add</button>
+            </div>
+        </div>
+    </div>
+    <br><hr>
+
+    <h1 style="margin-top: 2rem;" class="title">{ lists }</h1>
+    <div class="item-container">
+        <div class="item-title grid">
+            <h3>s.N.</h3>
+            <h3>name</h3>
+            <h3>QTY.</h3>
+            <h3>unit</h3>
+            <button id="clearAll">Clear</button>
+        </div>
+        <div class="item-list" id="itemContainer"></div>
+    </div>
+    <br><hr>
+    
+    <details>
+        <summary>&nbsp; How to use?</summary>
+        <div>
+            <h1 class="title">{ instructions }</h1>
+            <div class="headRow gridTable">
+                <h3>key</h3>
+                <h3>description</h3>
+            </div>
+    
+            <div>
+                <div class="gridTable">
+                    <button class="btn" onclick="reset()" style="background-color: red;">reset</button>
+                    <p>Reset Button is used to "Reset" input field</p>
+                </div>
+                <div class="gridTable">
+                    <button class="btn" onclick="addItems()" style="background-color: green;">add</button>
+                    <p>Add Button is used to "Add Items" to the list</p>
+                </div>
+                <div class="gridTable">
+                    <button class="btn clear colorGrey" onclick="clearItems()">clear</button>
+                    <p>Clear Button is used to "Clear" the list</p>
+                </div>
+                <div class="gridTable">
+                    <button class="deleteBtn"></button>
+                    <p>This (Red) Button is used to "Delete" a single item from the list</p>
+                </div>
+                <div class="gridTable">
+                    <button class="toggleBtn markDoneBtn"></button>
+                    <p>This (Yellow) Button is used to "Mark Done" a single item from the list</p>
+                </div>
+                <div class="gridTable">
+                    <button class="toggleBtn unDoneBtn"></button>
+                    <p>This (Green) Button is used to "Mark UnDone" a single item from the list</p>
+                </div>
+                <div class="gridTable">
+                    <button class="btn colorGrey">enter</button>
+                    <p>Press "Enter" in any input field to "Add Item" to the list (Only in PC)</p>
+                </div>
+                <div class="gridTable">
+                    <button class="btn colorGrey">Ctrl</button>
+                    <p>Control Button "Ctrl" is also used to "Reset" input field (Only in PC)</p>
+                </div>
+            </div>
+        </div>
+        </details>
+        
+        <footer>
+            { Made by ~ Abhhishek } &copy; All Right Reserved. &nbsp; <a href="https://www.instagram.com/abhimehrr/" target="_blank">imbot.</a>
+        </footer>
+    <script src="app.js"></script>
+</body>
+</html>
